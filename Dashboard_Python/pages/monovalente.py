@@ -25,74 +25,7 @@ tabela_monovalente_completa_cobertura = tabela_monovalente_completa_cobertura.co
 tabela_monovalente_cobertura_municipios = tabela_monovalente_cobertura_municipios.copy()
 monovalente_cobertura_faixa_etaria_municipios = monovalente_cobertura_faixa_etaria_municipios.copy()
 
-# conexao_info = {
-#     'database': "db_dados_tratados",
-#     'host': "10.111.9.167",
-#     'user': "user_dados_tratados",
-#     'password': "Tr@tADOS_PrOc355ing",
-#     'port': "5432"
-# }
 
-# def executar_consulta(query):
-#     with psycopg2.connect(**conexao_info) as conexao:
-#         with conexao.cursor() as cursor:
-#             cursor.execute(query)
-#             resultados = cursor.fetchall()
-#             colunas = [desc[0] for desc in cursor.description]
-#     return pd.DataFrame(resultados, columns=colunas)
-
-# query5 = "SELECT * FROM painel_python.tabela_monovalente_doses_faixaetaria_regioes"
-# query6 = "SELECT * FROM painel_python.tabela_monovalente_tabela_doses_regioes"
-# query7 = "SELECT * FROM painel_python.tabela_monovalente_cobertura_faixa_etaria_pop"
-# query8 = "SELECT * FROM painel_python.tabela_monovalente_completa_cobertura"
-# query9 = "SELECT * FROM painel_python.tabela_monovalente_cobertura_municipios"
-# query10 = "SELECT * FROM painel_python.tabela_monovalente_cobertura_doses_faixa_etaria_municipios"
-
-
-# tabela_faixa_etaria = executar_consulta(query5)
-# tabela_completa = executar_consulta(query6)
-# tabela_cobertura_faixa_etaria = executar_consulta(query7)
-# tabela_monovalente_completa_cobertura = executar_consulta(query8)
-# tabela_monovalente_cobertura_municipios = executar_consulta(query9)
-# monovalente_cobertura_faixa_etaria_municipios = executar_consulta(query10)
-
-# conexao_info = {
-#     'database': "db_dados_tratados",
-#     'host': "10.111.9.167",
-#     'user': "user_dados_tratados",
-#     'password': "Tr@tADOS_PrOc355ing",
-#     'port': "5432"
-# }
-
-# # Criação do pool de conexões
-# connection_pool = psycopg2.pool.SimpleConnectionPool(1, 20, **conexao_info)
-
-# def executar_consulta(query):
-#     conn = connection_pool.getconn()
-#     try:
-#         with conn.cursor() as cursor:
-#             cursor.execute(query)
-#             resultados = cursor.fetchall()
-#             colunas = [desc[0] for desc in cursor.description]
-#         return pd.DataFrame(resultados, columns=colunas)
-#     finally:
-#         connection_pool.putconn(conn)
-
-
-# query1 = "SELECT * FROM painel_python.tabela_monovalente_doses_faixaetaria_regioes"
-# query2 = "SELECT * FROM painel_python.tabela_monovalente_tabela_doses_regioes"
-# query5 = "SELECT * FROM painel_python.tabela_monovalente_cobertura_faixa_etaria_pop"
-# query6 = "SELECT * FROM painel_python.tabela_monovalente_completa_cobertura"
-# query8 = "SELECT * FROM painel_python.tabela_monovalente_cobertura_municipios"
-# query10 = "SELECT * FROM painel_python.tabela_monovalente_cobertura_doses_faixa_etaria_municipios"
-
-
-# tabela_faixa_etaria = executar_consulta(query1)
-# tabela_completa = executar_consulta(query2)
-# tabela_cobertura_faixa_etaria = executar_consulta(query5)
-# tabela_monovalente_completa_cobertura = executar_consulta(query6)
-# tabela_monovalente_cobertura_municipios = executar_consulta(query8)
-# monovalente_cobertura_faixa_etaria_municipios = executar_consulta(query10)
 
 
 ######################################                ######################################
