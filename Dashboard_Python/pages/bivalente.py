@@ -7,8 +7,6 @@ import geopandas as gpd
 import pandas as pd
 import json
 
-#import psycopg2
-#from psycopg2 import pool
 
 # importando tabelas do indexprincipal.py
 from perfomace import df_municipio, df_regiao, df_tabela_populacao_municipio, populacao_total_bivalente
